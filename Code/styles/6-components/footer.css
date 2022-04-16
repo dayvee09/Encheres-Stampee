@@ -1,0 +1,140 @@
+.pied-page {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 350px;
+  background-color: var(--color-primary);
+  margin-top: var(--space-large);
+}
+
+.pied-page > * + * {
+  margin-left: var(--space-small);
+}
+
+.pied-page p,
+.pied-page a,
+.pied-page h3 {
+  color: var(--color-label);
+}
+
+.footer__logo {
+  width: 30%;
+}
+
+.footer__logo > img {
+  max-width: 100%;
+  padding: var(--space-small);
+  pointer-events: none;
+}
+
+.footer__aide {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.infolettre {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 30%;
+  background-color: var(--color-secondary);
+}
+
+.infolettre > * {
+  margin-left: var(--space-small);
+  margin-top: var(--space-medium);
+}
+
+.infolettre > *:last-child {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.infolettre input {
+  padding: 20px;
+  width: 80%;
+  border-radius: 5px;
+  border-color: var(--color-label);
+}
+
+.infolettre h2 {
+  font-weight: 700;
+  font-size: var(--size-xlarge);
+}
+
+.footer__centre {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: var(--space-medium);
+}
+
+.footer__aide-termes {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: var(--space-medium);
+}
+
+.footer__contact > *:last-child,
+.footer__aide-termes > *:last-child {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.footer__contact--social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer__contact--social > * + * {
+  margin-left: var(--space-small);
+}
+
+.footer__img--social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__img--social > img {
+  max-width: 100%;
+}
+
+.footer__img--social > * + * {
+  margin-left: var(--space-basis);
+}
+
+.footer__aide > * + *,
+.footer__contact--pays > * + * {
+  margin-top: var(--space-basis);
+}
+
+.footer__aide > *:nth-child(2),
+.footer__contact--pays > *:nth-child(2) {
+  margin-top: var(--space-small);
+}
+
+.social__img--wrapper {
+  width: 40px;
+  height: 40px;
+}
+
+.pied-page button {
+  color: var(--color-secondary);
+}
+
+.pied-page button:hover {
+  background-color: var(--color-primary);
+}

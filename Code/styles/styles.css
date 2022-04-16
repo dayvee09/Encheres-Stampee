@@ -1,0 +1,31 @@
+/* Méthodologie choisie: BEM et ITCSS */
+
+/* SETTINGS */
+
+@import url("./1-settings/variables.css");
+
+/* GENERIC */
+
+@import url("./3-generic/purify.css");
+
+/* ELEMENTS */
+
+@import url("./4-elements/elements.css");
+@import url("./4-elements/fonts.css");
+
+/* OBJECTS */
+
+@import url("./5-objects/wrapper.css");
+
+/* COMPONENTS */
+
+@import url("./6-components/vitrine.css");
+@import url("./6-components/nav.css");
+@import url("./6-components/footer.css");
+@import url("./6-components/banniere.css");
+@import url("./6-components/grid.css");
+@import url("./6-components/fiche.css");
+@import url("./6-components/footer.css");
+@import url("./6-components/titre.css");
+@import url("./6-components/search-bar.css");
+@import url("./6-components/tile.css");

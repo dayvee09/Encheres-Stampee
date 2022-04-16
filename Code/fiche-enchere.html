@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr_CA">
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Maquette 2</title>
+    <meta name="description" content="Maquette Fiche" />
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+
+    <!-- script -->
+    <script type="module" src="./scripts/main.js" defer></script>
+  </head>
+
+  <body>
+    <header class="barre-nav">
+      <div class="nav--primaire">
+        <div class="nav__logo">
+          <a href="./index.html"
+            ><img src="./assets/img/nav/logo-2-alt.png"
+          /></a>
+          <h1 class="nav__lord">LORD STAMPEE</h1>
+          <div class="modal hidden">
+            <div class="philatelie">
+              <div class="philatelie__wrapper">
+                <h2>La philatélie, c'est la vie</h2>
+                <img src="./assets/img/articles/vie.png" alt="vie" />
+              </div>
+            </div>
+            <div class="biographie">
+              <div class="biographie__wrapper">
+                <h2>Biographie du Lord Stampee</h2>
+                <img
+                  src="./assets/img/icones/logo-2-alt.png"
+                  alt="biographie"
+                />
+              </div>
+            </div>
+            <div class="historique-familial">
+              <div class="historique__wrapper">
+                <h2>Historique familial</h2>
+                <img src="./assets/img/articles/tree.png" alt="arbre" />
+              </div>
+            </div>
+            <div class="btn--close">
+              <img src="./assets/img/icones/close.png" alt="close" />
+            </div>
+          </div>
+        </div>
+        <div class="menus">
+          <div class="menu__haut">
+            <div class="menu__actualite">
+              <h3>Actualités</h3>
+              <div class="actualite__dropdown--wrapper">
+                <ul class="actualite__dropdown">
+                  <li>Timbre</li>
+                  <li>Enchère</li>
+                  <li>Bridge</li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu__catalogue">
+              <a href="./catalogue.html">Catalogue</a>
+            </div>
+          </div>
+          <div class="menu__bas">
+            <div class="menu__recherche">
+              <input
+                type="text"
+                name="menu-recherche"
+                placeholder="Cherchez pour un lot de timbres dans notre base de données"
+              />
+            </div>
+            <div class="profil-pays">
+              <div class="menu__profil">
+                <img src="./assets/img/icones/profil.png" alt="profil" />
+                <div class="profil__dropdown--wrapper">
+                  <ul class="profil__dropdown">
+                    <li>Connection</li>
+                    <li>S'inscrire</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu__pays">
+                <img src="./assets/img/icones/canada.png" alt="canada" />
+                <div class="pays__dropdown--wrapper">
+                  <ul class="pays__dropdown">
+                    <li>Canada</li>
+                    <li>USA</li>
+                    <li>Angleterre</li>
+                    <li>Australie</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav--secondaire"></div>
+    </header>
+    <main>
+      <div class="enchere__fiche">
+        <div class="fiche__img">
+          <div class="img--principale">
+            <img src="./assets/img/icones/back.png" alt="back" />
+            <img src="./assets/img/Latvia.jpg" alt="Latvia" />
+            <img src="./assets/img/icones/next.png" alt="next" />
+          </div>
+          <div class="img--secondaires">
+            <img src="./assets/img/Latvia.jpg" alt="Latvia" /><img
+              src="./assets/img/Australia.jpg"
+              alt="australia"
+            /><img src="./assets/img/Belgique.jpg" alt="belgique" /><img
+              src="./assets/img/Brno.jpg"
+              alt="brno"
+            />
+          </div>
+        </div>
+        <div class="fiche__mise">
+          <div class="fiche--haut-milieu">
+            <div class="fiche--haut">
+              <div class="fiche__entete">
+                <div class="fiche__titre">
+                  <h1>Lot de timbres du Canada</h1>
+                </div>
+                <div class="fiche__lot">Lot #345</div>
+              </div>
+              <div class="dates">
+                <div class="date--debut">
+                  <p>Date début enchère:</p>
+                  <span>03-25-2022 | 8h</span>
+                </div>
+                <div class="date--fin">
+                  <p>Date fin enchère:</p>
+                  <span>03-28-2022 | 20h</span>
+                </div>
+              </div>
+            </div>
+            <div class="fiche--milieu">
+              <div class="mise--actuelle">
+                <p>Mise actuelle</p>
+                <span>280.00$</span>
+              </div>
+              <div class="mise--meta">
+                <div class="mise--min">
+                  <p>Mise de départ</p>
+                  <span>100.00$</span>
+                </div>
+                <div class="mises--nb">
+                  <p>Nombre de mises</p>
+                  <span>18</span>
+                </div>
+                <div class="mise--deteneur">
+                  <p>Déteneur</p>
+                  <span>André B</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fiche--bas">
+            <div class="fiche__btn--miser">
+              <button>Miser</button>
+              <input type="text" name="mise" placeholder="290.00$" />
+            </div>
+            <div class="fiche__contact">
+              <img
+                src="./assets/img/icones/telephone.png"
+                alt="telephone"
+              /><img src="./assets/img/icones/message.png" alt="message" /><img
+                src="./assets/img/icones/coeur.png"
+                alt="coeur"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="fiche__description">
+          <h2 class="fiche__description--titre">Description</h2>
+          <div class="fiche__description--paragraphe">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div class="fiche__details">
+          <h2>Détails</h2>
+          <div class="fiche__details--liste">
+            <div class="fiche__details--certifie">
+              <h4>Certifié:<span>Authentique</span></h4>
+            </div>
+            <div class="fiche__details--condition">
+              <h4>Condition:<span>Usagé</span></h4>
+            </div>
+            <div class="fiche__details--pays">
+              <h4>Pays:<span>Angleterre</span></h4>
+            </div>
+            <div class="fiche__details--date">
+              <h4>Date:<span>1980</span></h4>
+            </div>
+            <div class="fiche__details--dimensions">
+              <h4>Dimensions:<span>Portrait</span></h4>
+            </div>
+            <div class="fiche__details--nb">
+              <h4>Nombre de timbres:<span>3</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="pied-page">
+      <div class="footer__logo">
+        <img src="./assets/img/icones/logo-1-alt.png" alt="Stampee" />
+      </div>
+      <div class="footer__centre">
+        <div class="footer__aide-termes">
+          <div class="footer__aide">
+            <h3>AIDE</h3>
+            <p><a href="#">Trouver une enchère</a></p>
+            <p><a href="#">Suivre une enchère</a></p>
+            <p><a href="#">Comment placer une mise</a></p>
+          </div>
+          <div class="footer__termes">
+            <p><a href="#">Termes et conditions</a></p>
+          </div>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact--pays">
+            <h3>CONTACTEZ-NOUS</h3>
+            <p><a href="#">Angleterre</a></p>
+            <p><a href="#">Canada</a></p>
+            <p><a href="#">USA</a></p>
+            <p><a href="#">Australie</a></p>
+          </div>
+          <div class="footer__contact--social">
+            <p>Suivez-nous sur nos réseaux sociaux</p>
+            <div class="footer__img--social">
+              <div class="social__img--wrapper">
+                <img src="./assets/img/icones/instagram.png" alt="instagram" />
+              </div>
+              <div class="social__img--wrapper">
+                <img src="./assets/img/icones/twitter.png" alt="twitter" />
+              </div>
+              <div class="social__img--wrapper">
+                <img src="./assets/img/icones/fb.png" alt="facebook" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="infolettre">
+        <div class="infolettre__titre"><h2>Infolettre</h2></div>
+        <div class="infolettre__courriel">
+          <input type="text" name="infolettre" placeholder="Adresse courriel" />
+        </div>
+        <div class="infolettre__inscription"><button>S'inscrire</button></div>
+      </div>
+    </footer>
+  </body>
+</html>

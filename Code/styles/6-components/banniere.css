@@ -1,0 +1,61 @@
+.vitrine__banniere {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.25vw;
+  padding: 0 0.25vw 0 0.25vw;
+  width: 100%;
+  height: 300px;
+  background-color: var(--color-primary);
+  margin-top: var(--space-large);
+}
+
+.vitrine__tuile--banniere {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--color-primary);
+  height: 100%;
+  align-self: center;
+}
+
+.vitrine__tuile--banniere > *:last-child {
+  margin-top: auto;
+}
+
+.vitrine__banniere > *:not(:last-child) {
+  border-right: 1px solid var(--color-label);
+}
+
+.vitrine__tuile--banniere p {
+  color: var(--color-label);
+  font-size: var(--size-large);
+  font-weight: 700;
+}
+
+.vitrine__tuile--banniere > *:first-child {
+  margin-top: 15%;
+}
+
+.vitrine__banniere--texte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vitrine__banniere--texte > p:nth-child(2) {
+  font-size: var(--size-medium);
+  text-align: center;
+  margin-top: var(--space-medium);
+  cursor: pointer;
+  width: 80%;
+  padding: 10px;
+  border: 1px solid var(--color-label);
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: var(--space-small);
+}
+
+.vitrine__banniere--texte > p:nth-child(2):hover {
+  color: var(--color-secondary);
+}

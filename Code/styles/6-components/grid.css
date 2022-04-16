@@ -1,0 +1,123 @@
+.enchere__fiche {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  gap: 5vw;
+}
+
+.fiche__img,
+.fiche__mise {
+  grid-row: 1/3;
+}
+
+[data-js-timbres] {
+  display: grid;
+  grid-column: 1/3;
+  column-gap: 3vw;
+  row-gap: 12vw;
+  grid-template-columns: repeat(var(--numColumnsMobile), 1fr);
+  grid-auto-rows: minmax(500px, auto);
+}
+
+.side-nav {
+  display: none;
+}
+
+.side-nav > * {
+  margin-top: var(--space-medium);
+}
+
+.nav__btn--catalogue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.nav__btn--catalogue > * + * {
+  margin-left: var(--space-basis);
+}
+.pied--catalogue {
+  margin-top: var(--space-medium);
+  width: 100%;
+}
+
+@media only screen and (min-width: 550px) {
+  [data-js-timbres] {
+    grid-column: 2/4;
+    row-gap: 7.5vw;
+    grid-template-columns: repeat(var(--numColumnsTablet), 1fr);
+  }
+
+  .side-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid lightgray;
+    grid-column: 1/2;
+    min-width: var(--side-nav-width);
+    grid-row: 1 / calc(var(--numStampsPerPage) + 1);
+  }
+
+  .side-nav > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .side-nav > * > * + * {
+    margin-top: var(--space-basis);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .pied--catalogue {
+    margin-top: var(--space-medium);
+    width: calc(100% - var(--side-nav-width));
+    margin-left: auto;
+  }
+
+  [data-js-timbres] {
+    grid-column: 2/4;
+    row-gap: 7.5vw;
+    grid-template-columns: repeat(var(--numColumnsSmallScreen), 1fr);
+  }
+
+  .side-nav {
+    grid-row: 1 /
+      calc(var(--numStampsPerPage) / var(--numColumnsSmallScreen) + 4);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  [data-js-timbres] {
+    grid-column: 2/5;
+    row-gap: 7.5vw;
+    grid-template-columns: repeat(var(--numColumnsLargeScreen), 1fr);
+  }
+
+  .side-nav {
+    grid-row: 1 /
+      calc(var(--numStampsPerPage) / var(--numColumnsLargeScreen) + 3);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  [data-js-timbres] {
+    grid-column: 2/6;
+    row-gap: 4.5vw;
+    grid-template-columns: repeat(var(--numColumnsXLargeScreen), 1fr);
+  }
+
+  .side-nav {
+    grid-row: 1 /
+      calc(var(--numStampsPerPage) / var(--numColumnsXLargeScreen) + 2);
+  }
+}

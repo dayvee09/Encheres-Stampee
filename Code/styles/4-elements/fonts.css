@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Caslon CP";
+  src: url("../../assets/fonts/CaslonCP/CaslonCP.otf") format("truetype");
+  font-family: "Champagne et limousine";
+  src: url("../../assets/fonts/Champagne__amp__Limousines/Champagne___Limousines_Bold.ttf")
+    format("truetype");
+}
+
+p,
+label {
+  font-family: "Caslon Cp";
+}
+
+h1,
+h3,
+::placeholder {
+  font-family: "Champagne et limousine";
+}
+
+div > *:not(h1, h3) {
+  font-family: "Caslon Cp";
+}

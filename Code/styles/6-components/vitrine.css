@@ -1,0 +1,343 @@
+.vitrine {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2vw;
+  width: 100%;
+  height: 500px;
+  padding: 2vw 1vw 0 1vw;
+  margin-top: var(--space-small);
+}
+
+.accueil section {
+  margin-top: var(--space-large);
+}
+
+.accueil section:nth-child(3) {
+  margin-top: var(--space-xlarge);
+}
+
+.vitrine__lord {
+  position: relative;
+  height: 500px;
+  margin-top: var(--space-small);
+  margin-bottom: -150px;
+  z-index: -5;
+}
+
+.vitrine__lord--background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -220px;
+  background-image: url("../../assets/img/nav/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vitrine__mission {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-small);
+  width: 40%;
+  background-color: var(--color-label);
+}
+
+.vitrine__mission > * + * {
+  margin-top: var(--space-basis);
+}
+
+.vitrine__tuile {
+  height: 450px;
+  border: 5px dotted white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: var(--space-basis);
+  background-color: var(--color-tile);
+}
+
+.vitrine__tuile > * {
+  height: 50%;
+  width: 100%;
+}
+
+.vitrine__tuile > * + * {
+  margin-top: var(--space-small);
+}
+
+.vitrine__voir-plus {
+  position: absolute;
+  top: calc(-1 * (2vw + var(--space-small)));
+  right: 1vw;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.vitrine__voir-plus a {
+  color: var(--color-primary);
+}
+
+.vitrine__voir-plus {
+  font-size: var(--size-large);
+}
+
+.vitrine__voir-plus:hover::after {
+  left: 5px;
+  right: 5px;
+  z-index: 1;
+}
+
+.vitrine__voir-plus::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 7px;
+  background: var(--color-primary);
+  height: 1px;
+  transition: all 0.3s ease;
+}
+
+.vitrine__enchere--img {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.vitrine__tuile:hover .vitrine__enchere--img img {
+  transform: scale(1.03);
+}
+
+.vitrine__enchere--texte {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.vitrine__enchere--texte > * + * {
+  margin-top: var(--space-small);
+}
+
+.vitrine__enchere--texte > *:last-child {
+  margin-top: auto;
+}
+
+.vitrine__tuile--mise {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.vitrine__tuile--mise img {
+  width: 20%;
+}
+
+.vitrine__description-lot > * + * {
+  margin-top: var(--space-basis);
+}
+
+.vitrine__mise-temps > * + * {
+  margin-top: var(--space-basis);
+}
+
+.vitrine__tuile--description {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.temps-restant {
+  margin-top: calc(-0.5 * var(--space-basis));
+  font-size: small;
+}
+
+.vitrine__mise--meta h5 {
+  color: var(--color-titles);
+  font-size: larger;
+}
+
+.vitrine__mise--meta > * + * {
+  margin-top: var(--space-basis);
+}
+
+.vitrine__actualite--description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vitrine__actualite {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.vitrine__actualite * + * {
+  margin-top: var(--space-medium);
+}
+
+.vitrine__actualite * + *:last-child {
+  margin-top: auto;
+}
+
+.vitrine__actualite img {
+  align-self: center;
+  height: 60%;
+}
+
+.vitrine__actualite h2 {
+  align-self: center;
+  font-size: medium;
+}
+
+.vitrine__actualite--description a,
+.vitrine__tuile--mise a,
+.side-nav button,
+select:not(:checked) {
+  padding: 5px;
+  border: 1px solid var(--color-primary);
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-label);
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.vitrine__actualite--description a:hover,
+.vitrine__tuile--mise a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.vitrine__actualite--description p {
+  width: 70%;
+}
+
+.lord {
+  margin-top: var(--space-xlarge);
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+
+.lord::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/img/nav/hero.jpg");
+  opacity: 0.2;
+}
+
+.lord-texte {
+  position: absolute;
+  background-color: white;
+  width: 50%;
+  height: 300px;
+  top: 100px;
+  right: 200px;
+  padding: var(--space-basis);
+}
+
+.lord-texte > * + * {
+  margin-top: var(--space-small);
+}
+
+.lord-texte > :last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lord-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 20%;
+  height: 300px;
+  top: 100px;
+  left: 200px;
+  pointer-events: none;
+}
+
+.lord-img img {
+  height: 100%;
+}
+
+.lire-suite {
+  font-size: var(--size-large);
+  position: relative;
+}
+
+.lire-suite:hover::after {
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.lire-suite::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: var(--color-titles);
+  height: 1px;
+  transition: all 0.3s ease;
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-top: var(--space-small);
+}
+
+.mission > *:nth-child(2) {
+  margin-top: var(--space-small);
+}
+
+.mission > *:nth-child(3) {
+  margin-top: var(--space-basis);
+}
+
+.mission > * {
+  text-align: center;
+}
+
+.vitrine__connection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vitrine__connection > * {
+  padding: var(--space-basis);
+  border: 1px solid var(--color-primary);
+  border-radius: 15px;
+}
+
+.vitrine__connection > * + * {
+  margin-left: var(--space-small);
+}
+
+.vitrine__connection a {
+  color: var(--color-primary);
+  font-size: larger;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.vitrine__connection a:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}

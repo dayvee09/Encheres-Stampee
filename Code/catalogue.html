@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr_CA">
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Maquette 1</title>
+    <meta name="description" content="Maquette catalogue" />
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+
+    <!-- script -->
+    <script type="module" src="./scripts/main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav--primaire">
+        <div class="nav__logo">
+          <a href="./index.html"
+            ><img src="./assets/img/nav/logo-2-alt.png"
+          /></a>
+          <h1 class="nav__lord">LORD STAMPEE</h1>
+          <div class="modal hidden">
+            <div class="philatelie">
+              <div class="philatelie__wrapper">
+                <h2>La philatélie, c'est la vie</h2>
+                <img src="./assets/img/articles/vie.png" alt="vie" />
+              </div>
+            </div>
+            <div class="biographie">
+              <div class="biographie__wrapper">
+                <h2>Biographie du Lord Stampee</h2>
+                <img
+                  src="./assets/img/icones/logo-2-alt.png"
+                  alt="biographie"
+                />
+              </div>
+            </div>
+            <div class="historique-familial">
+              <div class="historique__wrapper">
+                <h2>Historique familial</h2>
+                <img src="./assets/img/articles/tree.png" alt="arbre" />
+              </div>
+            </div>
+            <div class="btn--close">
+              <img src="./assets/img/icones/close.png" alt="close" />
+            </div>
+          </div>
+        </div>
+        <div class="menus">
+          <div class="menu__haut">
+            <div class="menu__actualite">
+              <h3>Actualités</h3>
+              <div class="actualite__dropdown--wrapper">
+                <ul class="actualite__dropdown">
+                  <li>Timbre</li>
+                  <li>Enchère</li>
+                  <li>Bridge</li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu__catalogue">
+              <a href="./catalogue.html">Catalogue</a>
+            </div>
+          </div>
+          <div class="menu__bas">
+            <div class="menu__recherche">
+              <input
+                type="text"
+                name="menu-recherche"
+                placeholder="Cherchez pour un lot de timbres dans notre base de données"
+              />
+            </div>
+            <div class="profil-pays">
+              <div class="menu__profil">
+                <img src="./assets/img/icones/profil.png" alt="profil" />
+                <div class="profil__dropdown--wrapper">
+                  <ul class="profil__dropdown">
+                    <li>Connection</li>
+                    <li>S'inscrire</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu__pays">
+                <img src="./assets/img/icones/canada.png" alt="canada" />
+                <div class="pays__dropdown--wrapper">
+                  <ul class="pays__dropdown">
+                    <li>Canada</li>
+                    <li>USA</li>
+                    <li>Angleterre</li>
+                    <li>Australie</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav--secondaire"></div>
+      <div class="wrapper--titre">
+        <h1 data-js-titre>Catalogue des enchères</h1>
+      </div>
+    </header>
+
+    <main class="wrapper--main">
+      <form class="search--main">
+        <div class="indication"></div>
+        <div class="search-bar">
+          <input
+            class="search-txt"
+            aria-label="Champ de recherche"
+            type="text"
+            data-js-filtre="recherche-catalogue"
+            placeholder="Cherchez un lot parmis notre inventaire de plus de 10 000 000 de timbres"
+          />
+        </div>
+        <div class="filtres--main">
+          <div class="filtres--modal">
+            <img src="./assets/img/icones/filter.png" />
+          </div>
+          <div class="wrapper__filtres--main">
+            <div class="critere--select">
+              <select class="sort asc" data-js-filtre="sort">
+                <option value="none" selected disabled hidden>Filtres &#8681</option>
+                <option value="prix">Prix</option>
+                <option value="consultations">Les plus consultés</option>
+                <option value="debut">Début de l'enchère</option>
+                <option value="fin">Fin de l'enchère</option>
+              </select>
+            </div>
+            <div class="critere--box">
+              <label for="actives">actives</label>
+              <input
+                type="checkbox"
+                checked
+                name="actives"
+                data-js-filtre="actives"
+              />
+              <label for="archivées">archivées</label>
+              <input
+                type="checkbox"
+                checked
+                name="archivées"
+                data-js-filtre="archives"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div data-js-timbres>
+        <div class="side-nav">
+          <div>
+            <label for="date">Date de création</label>
+            <div>
+              <button name="date" data-js-filtre="2000-">2000-</button
+              ><span>13133</span>
+            </div>
+            <div>
+              <button name="date" data-js-filtre="1980-2000">1980-2000</button
+              ><span>201000</span>
+            </div>
+            <div>
+              <button name="date" data-js-filtre="1950-1980">1950-1980</button
+              ><span>101113</span>
+            </div>
+            <div>
+              <button name="date" data-js-filtre="-1950">-1950</button
+              ><span>4421</span>
+            </div>
+          </div>
+
+          <div>
+            <label for="couleur">Couleur</label>
+            <div class="filtre--couleur">
+              <button name="couleur" data-js-filtre="noir-et-blanc">
+                Noir&blanc</button
+              ><span>13133</span>
+            </div>
+          </div>
+
+          <div>
+            <label for="pays">Continent d'origine</label>
+            <div>
+              <button name="pays" data-js-filtre="UK">UK</button
+              ><span>125135</span>
+            </div>
+            <div>
+              <button name="pays" data-js-filtre="Amerique">Amérique</button
+              ><span>9999</span>
+            </div>
+            <div>
+              <button name="pays" data-js-filtre="Europe">Europe</button
+              ><span>12324</span>
+            </div>
+            <div>
+              <button name="pays" data-js-filtre="Asie">Asie</button
+              ><span>12213</span>
+            </div>
+            <div>
+              <button name="pays" data-js-filtre="Afrique">Afrique</button
+              ><span>1513</span>
+            </div>
+          </div>
+
+          <div>
+            <label for="condition">Condition</label>
+            <div>
+              <button name="condition" data-js-filtre="parfaite">
+                Parfaite</button
+              ><span>125135</span>
+            </div>
+            <div>
+              <button name="condition" data-js-filtre="tres-bonne">
+                Très bonne</button
+              ><span>9999</span>
+            </div>
+            <div>
+              <button name="condition" data-js-filtre="bonne">Bonne</button
+              ><span>12324</span>
+            </div>
+            <div>
+              <button name="condition" data-js-filtre="passable">
+                Passable</button
+              ><span>12213</span>
+            </div>
+            <div>
+              <button name="condition" data-js-filtre="amoche">Amoché</button
+              ><span>1513</span>
+            </div>
+          </div>
+
+          <div>
+            <label for="tirage">Tirage</label>
+            <div data-js-filtre="tirage">
+              <input
+                type="text"
+                name="tirage"
+                placeholder="# de lot:"
+              /><button>></button>
+            </div>
+          </div>
+
+          <div>
+            <label for="dimension">Dimension</label>
+            <div>
+              <button name="dimension" data-js-filtre="grand">Grand</button
+              ><span>125135</span>
+            </div>
+            <div>
+              <button name="dimension" data-js-filtre="moyen">Moyen</button
+              ><span>9999</span>
+            </div>
+            <div>
+              <button name="dimension" data-js-filtre="petit">Petit</button
+              ><span>12324</span>
+            </div>
+            <div>
+              <button name="dimension" data-js-filtre="portrait">
+                Portrait</button
+              ><span>5055133</span>
+            </div>
+            <div>
+              <button name="dimension" data-js-filtre="paysage">Paysage</button
+              ><span>1123224</span>
+            </div>
+          </div>
+
+          <div>
+            <label for="certifié">Certifié</label>
+            <div>
+              <button name="certifié" data-js-filtre="certifie">Oui</button
+              ><button name="certifié" data-js-filtre="non-certifie">
+                Non
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <label for="prix">Prix</label>
+            <div>
+              <input
+                type="text"
+                name="prixMin"
+                data-js-filtre="prix-min"
+                placeholder="min:"
+              />
+              <span>à</span>
+              <input
+                type="text"
+                name="prixMax"
+                data-js-filtre="prix-max"
+                placeholder="max:"
+              /><button>></button>
+            </div>
+          </div>
+
+          <div>
+            <label for="choixLord">Coup de coeur du lord</label>
+            <div>
+              <button name="choixLord" data-js-filtre="oui-coup-de-coeur">
+                Oui</button
+              ><button name="choixLord" data-js-filtre="non-coup-de-coeur">
+                Non
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pied--catalogue">
+        <div class="nav__btn--catalogue">
+          <span>Page 2 de 420</span>
+          <button><<</button>
+          <button>Précédent</button>
+          <button>Suivant</button>
+          <button>>></button>
+        </div>
+      </div>
+    </main>
+    <footer class="pied-page">
+      <div class="footer__logo">
+        <img src="./assets/img/icones/logo-1-alt.png" alt="Stampee" />
+      </div>
+      <div class="footer__centre">
+        <div class="footer__aide-termes">
+          <div class="footer__aide">
+            <h3>AIDE</h3>
+            <p><a href="#">Trouver une enchère</a></p>
+            <p><a href="#">Suivre une enchère</a></p>
+            <p><a href="#">Comment placer une mise</a></p>
+          </div>
+          <div class="footer__termes">
+            <p><a href="#">Termes et conditions</a></p>
+          </div>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact--pays">
+            <h3>CONTACTEZ-NOUS</h3>
+            <p><a href="#">Angleterre</a></p>
+            <p><a href="#">Canada</a></p>
+            <p><a href="#">USA</a></p>
+            <p><a href="#">Australie</a></p>
+          </div>
+          <div class="footer__contact--social">
+            <p>Suivez-nous sur nos réseaux sociaux</p>
+            <div class="footer__img--social">
+              <div class="social__img--wrapper">
+                <img src="./assets/img/icones/instagram.png" alt="instagram" />
+              </div>
+              <div class="social__img--wrapper">
+                <img src="./assets/img/icones/twitter.png" alt="twitter" />
+              </div>
+              <div class="social__img--wrapper">
+                <img src="./assets/img/icones/fb.png" alt="facebook" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="infolettre">
+        <div class="infolettre__titre"><h2>Infolettre</h2></div>
+        <div class="infolettre__courriel">
+          <input type="text" name="infolettre" placeholder="Adresse courriel" />
+        </div>
+        <div class="infolettre__inscription"><button>S'inscrire</button></div>
+      </div>
+    </footer>
+  </body>
+</html>

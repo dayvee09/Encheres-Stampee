@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="fr_CA">
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Maquette 3</title>
+    <meta name="description" content="Maquette Fiche" />
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+
+    <!-- script -->
+    <script type="module" src="./scripts/main.js" defer></script>
+  </head>
+
+  <body>
+    <header class="barre-nav">
+      <div class="nav--primaire">
+        <div class="nav__logo">
+          <a href="./index.html"
+            ><img src="./assets/img/nav/logo-2-alt.png"
+          /></a>
+          <h1 class="nav__lord">LORD STAMPEE</h1>
+          <div class="modal hidden">
+            <div class="philatelie">
+              <div class="philatelie__wrapper">
+                <h2>La philatélie, c'est la vie</h2>
+                <img src="./assets/img/articles/vie.png" alt="vie" />
+              </div>
+            </div>
+            <div class="biographie">
+              <div class="biographie__wrapper">
+                <h2>Biographie du Lord Stampee</h2>
+                <img
+                  src="./assets/img/icones/logo-2-alt.png"
+                  alt="biographie"
+                />
+              </div>
+            </div>
+            <div class="historique-familial">
+              <div class="historique__wrapper">
+                <h2>Historique familial</h2>
+                <img src="./assets/img/articles/tree.png" alt="arbre" />
+              </div>
+            </div>
+            <div class="btn--close">
+              <img src="./assets/img/icones/close.png" alt="close" />
+            </div>
+          </div>
+        </div>
+        <div class="menus">
+          <div class="menu__haut">
+            <div class="menu__actualite">
+              <h3>Actualités</h3>
+              <div class="actualite__dropdown--wrapper">
+                <ul class="actualite__dropdown">
+                  <li>Timbre</li>
+                  <li>Enchère</li>
+                  <li>Bridge</li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu__catalogue">
+              <a href="./catalogue.html">Catalogue</a>
+            </div>
+          </div>
+          <div class="menu__bas">
+            <div class="menu__recherche">
+              <input
+                type="text"
+                name="menu-recherche"
+                placeholder="Cherchez pour un lot de timbres dans notre base de données"
+              />
+            </div>
+            <div class="profil-pays">
+              <div class="menu__profil">
+                <img src="./assets/img/icones/profil.png" alt="profil" />
+                <div class="profil__dropdown--wrapper">
+                  <ul class="profil__dropdown">
+                    <li>Connection</li>
+                    <li>S'inscrire</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu__pays">
+                <img src="./assets/img/icones/canada.png" alt="canada" />
+                <div class="pays__dropdown--wrapper">
+                  <ul class="pays__dropdown">
+                    <li>Canada</li>
+                    <li>USA</li>
+                    <li>Angleterre</li>
+                    <li>Australie</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav--secondaire"></div>
+    </header>
+
+    <main>
+      <div class="accueil">
+        <section class="vitrine__hero">
+          <div class="vitrine__lord">
+            <div class="vitrine__lord--background"></div>
+          </div>
+        </section>
+        <div class="mission">
+          <div>
+            <h1>
+              Notre mission: Permettre à notre communauté de philatélistes de
+              trouver leurs prochains coups de coeur à ajouter à leur collection
+              de timbres
+            </h1>
+          </div>
+          <div class="vitrine__connection">
+            <a href="#">Créez un compte maintenant</a>
+            <a href="#">Connectez-vous</a>
+          </div>
+        </div>
+        <section>
+          <h1>Enchères vedettes</h1>
+          <div class="vitrine">
+            <div class="vitrine__voir-plus"><a href="#">Voir plus</a></div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/disney.jpg" alt="disney" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt
+                    </h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 10 110$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/Electronic.jpg" alt="electronics" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt consectetur adipiscing
+                      elit, sed do eiusmod tempor incididunt
+                    </h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 1 000 000$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/France.jpg" alt="France" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>Lorem ipsum dolor sit amet</h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 1 000$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/romania.jpg" alt="romania" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt eiusmod tempor incididunt
+                    </h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 500$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/worldwide.jpg" alt="worldwide" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt consectetur adipiscing
+                      elit, sed do eiusmod tempor incididunt
+                    </h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 50 000$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h1>Basé sur vos recherches précédentes</h1>
+          <div class="vitrine">
+            <div class="vitrine__voir-plus"><a href="#">Voir plus</a></div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/us.jpg" alt="USA" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 11 000$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/soviet.jpg" alt="soviet" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod
+                    </h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 151$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/romania.jpg" alt="Romania" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 100 000$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/Ours.jpg" alt="ours" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>Lorem ipsum dolor sit</h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 109$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/Reine.jpg" alt="Reine" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt tempor incididunt
+                    </h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 40$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h1>Enchères qui se terminent bientôt</h1>
+          <div class="vitrine">
+            <div class="vitrine__voir-plus"><a href="#">Voir plus</a></div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/Australia.jpg" alt="Australia" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt consectetur adipiscing
+                      elit, sed do eiusmod tempor incididunt
+                    </h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 300$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/Belgique.jpg" alt="Belgique" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt Lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit
+                    </h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 180$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/Brno.jpg" alt="Brno" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt adipiscing elit, sed do
+                      eiusmod tempor incididunt
+                    </h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 11 100$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/Crow.jpg" alt="Crow" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 5 000 000$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/disney.jpg" alt="Disney" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt
+                    </h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 11 200$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h1>Actualités récentes</h1>
+          <div class="vitrine">
+            <div class="vitrine__voir-plus"><a href="#">Voir plus</a></div>
+            <div class="vitrine__actualite">
+              <h2>
+                Squish! The Louvre Puts the Kibosh on the $26.8 Million Sale of
+                Chardin’s Record-Setting Strawberry Painting
+              </h2>
+              <img src="./assets/img/articles/chardin.jpg" alt="Chardin" />
+              <div class="vitrine__actualite--description">
+                <p>Date de l'ajout: 04/01/2022</p>
+                <a href="#">Consulter</a>
+              </div>
+            </div>
+            <div class="vitrine__actualite">
+              <h2>
+                Christie’s Lands the Coveted Art Collection of Late
+                Philanthropist Anne Bass, Which Could Fetch $250 Million in May
+              </h2>
+              <img src="./assets/img/articles/bass.jpg" alt="Bass" />
+              <div class="vitrine__actualite--description">
+                <p>Date de l'ajout: 04/01/2022</p>
+                <a href="#">Consulter</a>
+              </div>
+            </div>
+            <div class="vitrine__actualite">
+              <h2>
+                The First-Ever Sample of Dust Collected From the Moon Is Coming
+                to Auction. NASA Thinks It Belongs to the People
+              </h2>
+              <img src="./assets/img/articles/dust.jpeg" alt="dust" />
+              <div class="vitrine__actualite--description">
+                <p>Date de l'ajout: 04/01/2022</p>
+                <a href="#">Consulter</a>
+              </div>
+            </div>
+            <div class="vitrine__actualite">
+              <h2>
+                Christie’s Hurriedly Withdraws Two Lots From an Upcoming
+                Antiquities Sale That May Have Been Looted
+              </h2>
+              <img src="./assets/img/articles/new-york.jpg" alt="new-york" />
+              <div class="vitrine__actualite--description">
+                <p>Date de l'ajout: 04/01/2022</p>
+                <a href="#">Consulter</a>
+              </div>
+            </div>
+            <div class="vitrine__actualite">
+              <h2>
+                How Much for an Invisible Artwork? Sotheby’s Is Betting It Can
+                Get a Half Million Dollars for a Sales Receipt by Yves Klein
+              </h2>
+              <img src="./assets/img/articles/invisible.jpg" alt="invisible" />
+              <div class="vitrine__actualite--description">
+                <p>Date de l'ajout: 04/01/2022</p>
+                <a href="#">Consulter</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h1>Les coups de coeur du Lord</h1>
+          <div class="vitrine">
+            <div class="vitrine__voir-plus"><a href="#">Voir plus</a></div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/Fusee.jpg" alt="Fusee" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt
+                    </h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 100$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/France.jpg" alt="France" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt adipiscing elit, sed do
+                      eiusmod tempor incididunt
+                    </h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 1 010$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/Georges.jpg" alt="Georges" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>Lorem ipsum</h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 100 000$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/Groundhog.jpg" alt="Groundhog" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt eiusmod tempor incididunt
+                    </h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 110$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vitrine__tuile">
+              <div class="vitrine__enchere--img">
+                <img src="./assets/img/James.jpg" alt="James" />
+              </div>
+              <div class="vitrine__enchere--texte">
+                <div class="vitrine__description-lot">
+                  <div class="vitrine__tuile--description">
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt
+                    </h4>
+                  </div>
+                  <div class="vitrine__tuile--lot"><p>Lot no. 100</p></div>
+                </div>
+                <div class="vitrine__mise-temps">
+                  <div class="vitrine__tuile--mise">
+                    <div class="vitrine__mise--meta">
+                      <h5>Mise actuelle: 800$</h5>
+                      <div class="temps-restant">
+                        Temps restant: 14h 52m 21s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="lord">
+          <div class="lord-texte">
+            <h1>Le lord Stampee et la philatélie</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt
+            </p>
+            <a href="#"><h1 class="lire-suite">Lire la suite</h1></a>
+          </div>
+          <div class="lord-img">
+            <img src="./assets/img/James.jpg" alt="James" />
+          </div>
+        </div>
+        <section class="vitrine__banniere">
+          <div class="vitrine__tuile--banniere">
+            <img src="./assets/img/icones/timbre.png" alt="timbre" />
+            <div class="vitrine__banniere--texte">
+              <p>Un vaste inventaire de timbres</p>
+              <p>Consultez notre catalogue</p>
+            </div>
+          </div>
+          <div class="vitrine__tuile--banniere">
+            <img src="./assets/img/icones/certificat.png" alt="certificat" />
+            <div class="vitrine__banniere--texte">
+              <p>Des timbres certifiés</p>
+              <p>Apprenez-en plus</p>
+            </div>
+          </div>
+          <div class="vitrine__tuile--banniere">
+            <img src="./assets/img/icones/payment.png" alt="paiement" />
+            <div class="vitrine__banniere--texte">
+              <p>Un paiement 100% sécurisé</p>
+              <p>Apprenez-en plus</p>
+            </div>
+          </div>
+          <div class="vitrine__tuile--banniere">
+            <img src="./assets/img/icones/thumbsup.png" alt="thumbs up" />
+            <div class="vitrine__banniere--texte">
+              <p>Notre priorité votre satisfaction</p>
+              <p>Créez-vous un compte maintenant</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="pied-page">
+      <div class="footer__logo">
+        <img src="./assets/img/icones/logo-1-alt.png" alt="Stampee" />
+      </div>
+      <div class="footer__centre">
+        <div class="footer__aide-termes">
+          <div class="footer__aide">
+            <h3>AIDE</h3>
+            <p><a href="#">Trouver une enchère</a></p>
+            <p><a href="#">Suivre une enchère</a></p>
+            <p><a href="#">Comment placer une mise</a></p>
+          </div>
+          <div class="footer__termes">
+            <p><a href="#">Termes et conditions</a></p>
+          </div>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact--pays">
+            <h3>CONTACTEZ-NOUS</h3>
+            <p><a href="#">Angleterre</a></p>
+            <p><a href="#">Canada</a></p>
+            <p><a href="#">USA</a></p>
+            <p><a href="#">Australie</a></p>
+          </div>
+          <div class="footer__contact--social">
+            <p>Suivez-nous sur nos réseaux sociaux</p>
+            <div class="footer__img--social">
+              <div class="social__img--wrapper">
+                <img src="./assets/img/icones/instagram.png" alt="instagram" />
+              </div>
+              <div class="social__img--wrapper">
+                <img src="./assets/img/icones/twitter.png" alt="twitter" />
+              </div>
+              <div class="social__img--wrapper">
+                <img src="./assets/img/icones/fb.png" alt="facebook" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="infolettre">
+        <div class="infolettre__titre"><h2>Infolettre</h2></div>
+        <div class="infolettre__courriel">
+          <input type="text" name="infolettre" placeholder="Adresse courriel" />
+        </div>
+        <div class="infolettre__inscription"><button>S'inscrire</button></div>
+      </div>
+    </footer>
+  </body>
+</html>
