@@ -21,8 +21,11 @@
   margin-top: var(--space-xlarge);
 }
 
-section > h1 {
+section > h2 {
   margin-top: var(--space-large);
+  color: var(--color-titles);
+  font-family: "Champagne et limousine";
+  font-size: var(--size-xlarge);
 }
 
 .vitrine__lord {
@@ -159,18 +162,17 @@ section > h1 {
   overflow: hidden;
 }
 
+.vitrine__tuile--description > h2 {
+  font-size: var(--size-medium);
+}
+
+.vitrine__tuile--description > p {
+  font-size: var(--size-medium);
+}
+
 .temps-restant {
   margin-top: calc(-0.5 * var(--space-basis));
   font-size: small;
-}
-
-.vitrine__mise--meta h5 {
-  color: var(--color-titles);
-  font-size: larger;
-}
-
-.vitrine__mise--meta > * + * {
-  margin-top: var(--space-basis);
 }
 
 .vitrine__actualite--description {
@@ -259,7 +261,7 @@ select:not(:checked) {
 
 .lord-texte > * + * {
   margin-top: var(--space-small);
-  font-size: var(--size-medium);
+  font-size: var(--size-medium-large);
 }
 
 .lord-texte > :last-child {
@@ -353,6 +355,15 @@ select:not(:checked) {
   background-color: var(--color-primary);
 }
 
-.vitrine :not(h5) {
+.vitrine :not(h2) {
   color: var(--color-primary);
+}
+
+.vitrine__mise--meta h3 {
+  color: var(--color-titles);
+  font-size: var(--size-medium-large);
+}
+
+.vitrine__mise--meta > * + * {
+  margin-top: var(--space-basis);
 }

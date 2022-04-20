@@ -65,13 +65,15 @@ input[type="checkbox"] {
   height: 18px;
 }
 
-label {
+label,
+.label {
   font-size: var(--size-medium);
   font-weight: 900;
   padding: var(--space-basis);
 }
 
-.side-nav label {
+.side-nav label,
+.side-nav .label {
   width: 100%;
   background-color: var(--color-label);
 }
@@ -127,8 +129,9 @@ select {
 }
 
 input::-webkit-input-placeholder {
-  font-size: var(--size-small);
-  font-weight: 900;
+  font-size: var(--size-medium);
+  font-weight: bold;
+  color: black;
 }
 
 select:not(:checked) {

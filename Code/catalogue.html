@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr_CA">
+<html lang="fr">
   <head>
     <!-- meta -->
     <meta charset="UTF-8" />
@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
 
     <!-- script -->
-    <script type="module" src="./scripts/main.js" defer></script>
+    <script type="module" src="./scripts/main.js"></script>
   </head>
 
   <body>
@@ -20,7 +20,7 @@
       <div class="nav--primaire">
         <div class="nav__logo">
           <a href="./index.html"
-            ><img src="./assets/img/nav/logo-2-alt.png"
+            ><img src="./assets/img/nav/logo-2-alt.png" alt="logo-nav"
           /></a>
           <h1 class="nav__lord">LORD STAMPEE</h1>
           <div class="modal hidden">
@@ -119,12 +119,20 @@
         </div>
         <div class="filtres--main">
           <div class="filtres--modal">
-            <img src="./assets/img/icones/filter.png" />
+            <img src="./assets/img/icones/filter.png" alt="filtre-modal" />
           </div>
           <div class="wrapper__filtres--main">
             <div class="critere--select">
-              <select class="sort asc" data-js-filtre="sort">
-                <option value="none" selected disabled hidden>Filtres &#8681</option>
+              <label for="filtres-select-catalogue">Trier:</label>
+              <select
+                class="sort asc"
+                id="filtres-select-catalogue"
+                name="filtres-select-catalogue"
+                data-js-filtre="sort"
+              >
+                <option value="none" selected disabled hidden>
+                  Filtres &#8681;
+                </option>
                 <option value="prix">Prix</option>
                 <option value="consultations">Les plus consultés</option>
                 <option value="debut">Début de l'enchère</option>
@@ -132,17 +140,19 @@
               </select>
             </div>
             <div class="critere--box">
-              <label for="actives">actives</label>
+              <label for="check-actives">actives</label>
               <input
                 type="checkbox"
                 checked
+                id="check-actives"
                 name="actives"
                 data-js-filtre="actives"
               />
-              <label for="archivées">archivées</label>
+              <label for="check-archives">archivées</label>
               <input
                 type="checkbox"
                 checked
+                id="check-archives"
                 name="archivées"
                 data-js-filtre="archives"
               />
@@ -154,17 +164,19 @@
       <div data-js-timbres>
         <div class="side-nav">
           <div>
-            <label for="date">Date de création</label>
+            <div class="label">Date de création</div>
             <div>
               <button name="date" data-js-filtre-btn="2000-">2000-</button
               ><span>13133</span>
             </div>
             <div>
-              <button name="date" data-js-filtre-btn="1980-2000">1980-2000</button
+              <button name="date" data-js-filtre-btn="1980-2000">
+                1980-2000</button
               ><span>201000</span>
             </div>
             <div>
-              <button name="date" data-js-filtre-btn="1950-1980">1950-1980</button
+              <button name="date" data-js-filtre-btn="1950-1980">
+                1950-1980</button
               ><span>101113</span>
             </div>
             <div>
@@ -174,7 +186,7 @@
           </div>
 
           <div>
-            <label for="couleur">Couleur</label>
+            <div class="label">Couleur</div>
             <div class="filtre--couleur">
               <button name="couleur" data-js-filtre-btn="noir-et-blanc">
                 Noir&blanc</button
@@ -183,7 +195,7 @@
           </div>
 
           <div>
-            <label for="pays">Continent d'origine</label>
+            <div class="label">Continent d'origine</div>
             <div>
               <button name="pays" data-js-filtre-btn="UK">UK</button
               ><span>125135</span>
@@ -207,7 +219,7 @@
           </div>
 
           <div>
-            <label for="condition">Condition</label>
+            <div class="label">Condition</div>
             <div>
               <button name="condition" data-js-filtre-btn="parfaite">
                 Parfaite</button
@@ -228,13 +240,14 @@
               ><span>12213</span>
             </div>
             <div>
-              <button name="condition" data-js-filtre-btn="amoche">Amoché</button
+              <button name="condition" data-js-filtre-btn="amoche">
+                Amoché</button
               ><span>1513</span>
             </div>
           </div>
 
           <div>
-            <label for="tirage">Tirage</label>
+            <div class="label">Tirage</div>
             <div data-js-filtre-txt="tirage">
               <input
                 type="text"
@@ -245,7 +258,7 @@
           </div>
 
           <div>
-            <label for="dimension">Dimension</label>
+            <div class="label">Dimensions</div>
             <div>
               <button name="dimension" data-js-filtre-btn="grand">Grand</button
               ><span>125135</span>
@@ -264,13 +277,14 @@
               ><span>5055133</span>
             </div>
             <div>
-              <button name="dimension" data-js-filtre-btn="paysage">Paysage</button
+              <button name="dimension" data-js-filtre-btn="paysage">
+                Paysage</button
               ><span>1123224</span>
             </div>
           </div>
 
           <div>
-            <label for="certifié">Certifié</label>
+            <div class="label">Certifié</div>
             <div>
               <button name="certifié" data-js-filtre-btn="certifie">Oui</button
               ><button name="certifié" data-js-filtre-btn="non-certifie">
@@ -280,7 +294,7 @@
           </div>
 
           <div>
-            <label for="prix">Prix</label>
+            <div class="label">Prix</div>
             <div>
               <input
                 type="text"
@@ -299,7 +313,7 @@
           </div>
 
           <div>
-            <label for="choixLord">Coup de coeur du lord</label>
+            <div class="label">Coup de coeur du lord</div>
             <div>
               <button name="choixLord" data-js-filtre-btn="oui-coup-de-coeur">
                 Oui</button
@@ -313,10 +327,10 @@
       <div class="pied--catalogue">
         <div class="nav__btn--catalogue">
           <span>Page 2 de 420</span>
-          <button><<</button>
+          <button>&lt;&lt;</button>
           <button>Précédent</button>
           <button>Suivant</button>
-          <button>>></button>
+          <button>&gt;&gt;</button>
         </div>
       </div>
     </main>
@@ -327,7 +341,7 @@
       <div class="footer__centre">
         <div class="footer__aide-termes">
           <div class="footer__aide">
-            <h3>AIDE</h3>
+            <h1>AIDE</h1>
             <p><a href="#">Trouver une enchère</a></p>
             <p><a href="#">Suivre une enchère</a></p>
             <p><a href="#">Comment placer une mise</a></p>
@@ -338,7 +352,7 @@
         </div>
         <div class="footer__contact">
           <div class="footer__contact--pays">
-            <h3>CONTACTEZ-NOUS</h3>
+            <h1>CONTACTEZ-NOUS</h1>
             <p><a href="#">Angleterre</a></p>
             <p><a href="#">Canada</a></p>
             <p><a href="#">USA</a></p>

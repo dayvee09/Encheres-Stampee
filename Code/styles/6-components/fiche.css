@@ -229,3 +229,7 @@ main > h1 {
 .fiche__contact img {
   object-fit: contain;
 }
+
+.fiche__details--certifie > h2 {
+  font-size: var(--size-medium);
+}

@@ -94,9 +94,9 @@ export default class Collection {
             </div>
                 
               <div class="timbre__info">
-                <h3 class="titre--timbre">${timbreNom} - Lot de timbres #${
+                <h1 class="titre--timbre">${timbreNom} - Lot de timbres #${
       i + 1
-    }</h3>
+    }</h1>
               </div>
             <div class="catalogue__timbre--txt">
               <div class="enchere__info">

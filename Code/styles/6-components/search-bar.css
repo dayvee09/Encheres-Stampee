@@ -47,6 +47,10 @@
   color: var(--color-primary);
 }
 
+.critere--select label {
+  font-size: larger;
+}
+
 @media only screen and (min-width: 550px) {
   .filtres--modal {
     display: none;

@@ -7,11 +7,13 @@
 }
 
 p,
-label {
+label,
+.label {
   font-family: "Caslon Cp";
 }
 
 h1,
+h2,
 h3,
 ::placeholder {
   font-family: "Champagne et limousine";

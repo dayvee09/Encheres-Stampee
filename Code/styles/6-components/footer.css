@@ -14,9 +14,13 @@
 
 .pied-page p,
 .pied-page a,
-.pied-page h3 {
+.pied-page h1 {
   transition: color 0.3s ease-in-out;
   color: var(--color-label);
+}
+
+.pied-page h1 {
+  font-size: var(--size-large);
 }
 
 .pied-page a:hover {
