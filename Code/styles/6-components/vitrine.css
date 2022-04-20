@@ -171,6 +171,8 @@ section > h2 {
 }
 
 .temps-restant {
+  display: flex;
+  justify-content: space-between;
   margin-top: calc(-0.5 * var(--space-basis));
   font-size: small;
 }
