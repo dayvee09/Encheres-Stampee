@@ -15,7 +15,12 @@
 .pied-page p,
 .pied-page a,
 .pied-page h3 {
+  transition: color 0.3s ease-in-out;
   color: var(--color-label);
+}
+
+.pied-page a:hover {
+  color: var(--color-secondary);
 }
 
 .footer__logo {
@@ -63,6 +68,11 @@
 .infolettre h2 {
   font-weight: 700;
   font-size: var(--size-xlarge);
+}
+
+footer p,
+footer a {
+  font-size: clamp(10px, 1.5vw, 1rem);
 }
 
 .footer__centre {
@@ -133,6 +143,7 @@
 
 .pied-page button {
   color: var(--color-secondary);
+  width: 50%;
 }
 
 .pied-page button:hover {

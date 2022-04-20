@@ -24,10 +24,18 @@
 }
 
 .nav--secondaire {
-  z-index: -10;
-  height: 300px;
-  opacity: 0;
-  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35%;
+  width: 92%;
+  position: absolute;
+  /* top: -220px; */
+  background-image: url("../../assets/img/nav/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: -100;
 }
 
 .nav__logo {
@@ -97,6 +105,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-bottom: var(--space-basis);
 }
 
 .menu__bas > * + * {
@@ -165,6 +174,8 @@
 }
 
 .menu__profil {
+  display: flex;
+  align-items: center;
   width: 5%;
   cursor: pointer;
 }
@@ -314,9 +325,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 25px;
-  background-color: var(--color-label);
+  background-color: var(--color-tile);
   width: 20vw;
   height: 200px;
+  border-radius: 10px;
+  border: 5px dotted white;
 }
 
 .modal > * + * {
@@ -330,8 +343,7 @@
 }
 
 .grise {
-  filter: contrast(10%);
-  opacity: 0.001;
+  opacity: 0.2;
 }
 
 .hidden {

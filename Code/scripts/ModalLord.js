@@ -5,7 +5,6 @@ export default class ModalLord {
     this.elNavMenus = document.querySelector(".menus");
     this.elMain = document.querySelector("main");
     this.elBtnClose = document.querySelector(".btn--close");
-    console.log(this.elBtnClose);
     this.init();
   }
 
@@ -64,11 +63,9 @@ export default class ModalLord {
   }
 
   fermetureModalBtn() {
-    console.log(this.elBtnClose);
     this.elBtnClose.addEventListener(
       "click",
       function () {
-        console.log("test");
         this.elModal.classList.add("hidden");
         if (!this.elModal.classList.contains("hidden")) {
           this.elMain.classList.add("grise");

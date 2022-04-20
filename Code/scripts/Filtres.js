@@ -6,6 +6,7 @@ export default class Filtres {
   }
 
   init() {
+    this.appliqueFiltresBtnsSideNav();
     switch (this.elFiltre.dataset.jsFiltre) {
       case "archives": {
         this.appliqueFiltreCheckBox();
@@ -220,6 +221,15 @@ export default class Filtres {
         }
         this.selection = e.target.value;
         this.elFiltre.firstElementChild.selected = true;
+      }.bind(this)
+    );
+  }
+
+  appliqueFiltresBtnsSideNav() {
+    this.elFiltre.addEventListener(
+      "click",
+      function () {
+        this.elFiltre.classList.toggle("btn-filtre--selectionne");
       }.bind(this)
     );
   }

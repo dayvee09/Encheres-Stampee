@@ -18,6 +18,7 @@ export default class Collection {
     }
     this.initieFiltresCheckbox();
     this.initieFiltresSelect();
+    this.initieFiltresBtnsSideNav();
   }
 
   initieFiltresCheckbox() {
@@ -30,6 +31,13 @@ export default class Collection {
   initieFiltresSelect() {
     let elFiltreSelect = document.querySelector(".sort");
     new Filtres(elFiltreSelect);
+  }
+
+  initieFiltresBtnsSideNav() {
+    let elFiltresBtnSideNav = document.querySelectorAll("[data-js-filtre-btn]");
+    for (let i = 0; i < elFiltresBtnSideNav.length; i++) {
+      new Filtres(elFiltresBtnSideNav[i]);
+    }
   }
 
   injecteTimbres(i) {
@@ -77,7 +85,7 @@ export default class Collection {
     // DOMString de la tuile de chaque timbre
     let timbreDOMString = `
         
-        <div data-js-timbre="${timbreNom}">
+        <a href="./fiche-enchere.html" data-js-timbre="${timbreNom}">
           
           <div class="grid__tuile">
                 
@@ -85,21 +93,25 @@ export default class Collection {
               <div class="img-wrapper--timbre">${timbreImg}</div>
             </div>
                 
-            <div class="timbre__info">
-              <h3 class="titre--timbre">${timbreNom} - Lot de timbres #${
+              <div class="timbre__info">
+                <h3 class="titre--timbre">${timbreNom} - Lot de timbres #${
       i + 1
     }</h3>
-            </div>
-            <div class="enchere__info">
-              <p class="description--lot">${description}</p>
-              <div class="date--debut">Début: <span>${tempsDebut}</span></div>
-              <div class="date--fin">Fin: <span>${tempsFin}</span></div>
-              <div class="mise--courante">Mise courante: <span>${miseCourante}$</span></div>
+              </div>
+            <div class="catalogue__timbre--txt">
+              <div class="enchere__info">
+                <p class="description--lot">${description}</p>
+                <div class="meta-date">
+                  <div class="date--debut"><span>Début: ${tempsDebut}</span></div>
+                  <div class="date--fin"><span>Fin: ${tempsFin}</span></div>
+                </div>
+                <div class="mise--courante">Mise courante: <span>${miseCourante}$</span></div>
+              </div>
             </div>
             <div class="detail--lot"><button value="Consulter">Consulter</button></div>
           </div>
 
-        </div>
+        </a>
         `;
 
     // Injection de la DOMString dans l'interface de l'application

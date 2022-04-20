@@ -63,7 +63,7 @@
               </div>
             </div>
             <div class="menu__catalogue">
-              <a href="./catalogue.html">Catalogue</a>
+              <a href="./catalogue.html"><h3>Catalogue</h3></a>
             </div>
           </div>
           <div class="menu__bas">
@@ -156,19 +156,19 @@
           <div>
             <label for="date">Date de création</label>
             <div>
-              <button name="date" data-js-filtre="2000-">2000-</button
+              <button name="date" data-js-filtre-btn="2000-">2000-</button
               ><span>13133</span>
             </div>
             <div>
-              <button name="date" data-js-filtre="1980-2000">1980-2000</button
+              <button name="date" data-js-filtre-btn="1980-2000">1980-2000</button
               ><span>201000</span>
             </div>
             <div>
-              <button name="date" data-js-filtre="1950-1980">1950-1980</button
+              <button name="date" data-js-filtre-btn="1950-1980">1950-1980</button
               ><span>101113</span>
             </div>
             <div>
-              <button name="date" data-js-filtre="-1950">-1950</button
+              <button name="date" data-js-filtre-btn="-1950">-1950</button
               ><span>4421</span>
             </div>
           </div>
@@ -176,7 +176,7 @@
           <div>
             <label for="couleur">Couleur</label>
             <div class="filtre--couleur">
-              <button name="couleur" data-js-filtre="noir-et-blanc">
+              <button name="couleur" data-js-filtre-btn="noir-et-blanc">
                 Noir&blanc</button
               ><span>13133</span>
             </div>
@@ -185,23 +185,23 @@
           <div>
             <label for="pays">Continent d'origine</label>
             <div>
-              <button name="pays" data-js-filtre="UK">UK</button
+              <button name="pays" data-js-filtre-btn="UK">UK</button
               ><span>125135</span>
             </div>
             <div>
-              <button name="pays" data-js-filtre="Amerique">Amérique</button
+              <button name="pays" data-js-filtre-btn="Amerique">Amérique</button
               ><span>9999</span>
             </div>
             <div>
-              <button name="pays" data-js-filtre="Europe">Europe</button
+              <button name="pays" data-js-filtre-btn="Europe">Europe</button
               ><span>12324</span>
             </div>
             <div>
-              <button name="pays" data-js-filtre="Asie">Asie</button
+              <button name="pays" data-js-filtre-btn="Asie">Asie</button
               ><span>12213</span>
             </div>
             <div>
-              <button name="pays" data-js-filtre="Afrique">Afrique</button
+              <button name="pays" data-js-filtre-btn="Afrique">Afrique</button
               ><span>1513</span>
             </div>
           </div>
@@ -209,33 +209,33 @@
           <div>
             <label for="condition">Condition</label>
             <div>
-              <button name="condition" data-js-filtre="parfaite">
+              <button name="condition" data-js-filtre-btn="parfaite">
                 Parfaite</button
               ><span>125135</span>
             </div>
             <div>
-              <button name="condition" data-js-filtre="tres-bonne">
+              <button name="condition" data-js-filtre-btn="tres-bonne">
                 Très bonne</button
               ><span>9999</span>
             </div>
             <div>
-              <button name="condition" data-js-filtre="bonne">Bonne</button
+              <button name="condition" data-js-filtre-btn="bonne">Bonne</button
               ><span>12324</span>
             </div>
             <div>
-              <button name="condition" data-js-filtre="passable">
+              <button name="condition" data-js-filtre-btn="passable">
                 Passable</button
               ><span>12213</span>
             </div>
             <div>
-              <button name="condition" data-js-filtre="amoche">Amoché</button
+              <button name="condition" data-js-filtre-btn="amoche">Amoché</button
               ><span>1513</span>
             </div>
           </div>
 
           <div>
             <label for="tirage">Tirage</label>
-            <div data-js-filtre="tirage">
+            <div data-js-filtre-txt="tirage">
               <input
                 type="text"
                 name="tirage"
@@ -247,24 +247,24 @@
           <div>
             <label for="dimension">Dimension</label>
             <div>
-              <button name="dimension" data-js-filtre="grand">Grand</button
+              <button name="dimension" data-js-filtre-btn="grand">Grand</button
               ><span>125135</span>
             </div>
             <div>
-              <button name="dimension" data-js-filtre="moyen">Moyen</button
+              <button name="dimension" data-js-filtre-btn="moyen">Moyen</button
               ><span>9999</span>
             </div>
             <div>
-              <button name="dimension" data-js-filtre="petit">Petit</button
+              <button name="dimension" data-js-filtre-btn="petit">Petit</button
               ><span>12324</span>
             </div>
             <div>
-              <button name="dimension" data-js-filtre="portrait">
+              <button name="dimension" data-js-filtre-btn="portrait">
                 Portrait</button
               ><span>5055133</span>
             </div>
             <div>
-              <button name="dimension" data-js-filtre="paysage">Paysage</button
+              <button name="dimension" data-js-filtre-btn="paysage">Paysage</button
               ><span>1123224</span>
             </div>
           </div>
@@ -272,8 +272,8 @@
           <div>
             <label for="certifié">Certifié</label>
             <div>
-              <button name="certifié" data-js-filtre="certifie">Oui</button
-              ><button name="certifié" data-js-filtre="non-certifie">
+              <button name="certifié" data-js-filtre-btn="certifie">Oui</button
+              ><button name="certifié" data-js-filtre-btn="non-certifie">
                 Non
               </button>
             </div>
@@ -285,14 +285,14 @@
               <input
                 type="text"
                 name="prixMin"
-                data-js-filtre="prix-min"
+                data-js-filtre-txt="prix-min"
                 placeholder="min:"
               />
               <span>à</span>
               <input
                 type="text"
                 name="prixMax"
-                data-js-filtre="prix-max"
+                data-js-filtre-txt="prix-max"
                 placeholder="max:"
               /><button>></button>
             </div>
@@ -301,9 +301,9 @@
           <div>
             <label for="choixLord">Coup de coeur du lord</label>
             <div>
-              <button name="choixLord" data-js-filtre="oui-coup-de-coeur">
+              <button name="choixLord" data-js-filtre-btn="oui-coup-de-coeur">
                 Oui</button
-              ><button name="choixLord" data-js-filtre="non-coup-de-coeur">
+              ><button name="choixLord" data-js-filtre-btn="non-coup-de-coeur">
                 Non
               </button>
             </div>

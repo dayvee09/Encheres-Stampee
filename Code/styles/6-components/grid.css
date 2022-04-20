@@ -1,8 +1,15 @@
 .enchere__fiche {
+  width: 70vw;
+  height: 90vh;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(200px, auto);
-  gap: 5vw;
+  grid-auto-rows: 200px;
+  gap: 3vw;
+}
+
+.enchere__fiche > * {
+  height: 400px;
 }
 
 .fiche__img,
@@ -13,10 +20,17 @@
 [data-js-timbres] {
   display: grid;
   grid-column: 1/3;
-  column-gap: 3vw;
+  column-gap: 1vw;
   row-gap: 12vw;
   grid-template-columns: repeat(var(--numColumnsMobile), 1fr);
   grid-auto-rows: minmax(500px, auto);
+}
+
+.catalogue__timbre--txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .side-nav {
@@ -24,7 +38,12 @@
 }
 
 .side-nav > * {
-  margin-top: var(--space-medium);
+  border: 1px solid lightgray;
+  padding: var(--space-basis);
+}
+
+.side-nav > * + * {
+  margin-top: var(--space-small);
 }
 
 .nav__btn--catalogue {
@@ -37,6 +56,11 @@
 .nav__btn--catalogue > * + * {
   margin-left: var(--space-basis);
 }
+
+.nav__btn--catalogue button {
+  width: 100px;
+}
+
 .pied--catalogue {
   margin-top: var(--space-medium);
   width: 100%;
@@ -50,11 +74,11 @@
   }
 
   .side-nav {
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 1px solid lightgray;
     grid-column: 1/2;
     min-width: var(--side-nav-width);
     grid-row: 1 / calc(var(--numStampsPerPage) + 1);
@@ -71,10 +95,14 @@
   .side-nav > * > * + * {
     margin-top: var(--space-basis);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    width: 80%;
+    width: 100%;
   }
+}
+
+.side-nav > * > * + * button {
+  margin-right: var(--space-small);
 }
 
 @media only screen and (min-width: 768px) {
