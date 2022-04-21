@@ -9,6 +9,10 @@
   margin-top: var(--space-small);
 }
 
+.vitrine.vitrine__articles {
+  gap: 2vw;
+}
+
 .fiche__vitrine-wrapper {
   grid-template-columns: repeat(4, 1fr);
   width: 70vw;
@@ -187,8 +191,8 @@ section > h2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  overflow: hidden;
   cursor: pointer;
+  height: 450px;
 }
 
 .vitrine__actualite * + * {
@@ -199,9 +203,15 @@ section > h2 {
   margin-top: auto;
 }
 
-.vitrine__actualite img {
+.vitrine__actualite > :nth-child(2) {
   align-self: center;
+  margin-top: auto;
   height: 60%;
+  overflow: hidden;
+}
+
+.vitrine__actualite img {
+  height: 100%;
 }
 
 .vitrine__actualite h2 {

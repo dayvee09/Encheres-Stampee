@@ -67,7 +67,7 @@
   margin-top: var(--space-small);
   text-align: center;
   font-weight: 900;
-  font-size: var(--size-large);
+  font-size: var(--size-medium-large);
 }
 
 .noLot {
@@ -111,4 +111,8 @@
 
 .hidden {
   display: none;
+}
+
+.meta-date {
+  line-height: 1.25;
 }

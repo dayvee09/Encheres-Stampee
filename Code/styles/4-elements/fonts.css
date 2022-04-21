@@ -19,6 +19,6 @@ h3,
   font-family: "Champagne et limousine";
 }
 
-div > *:not(h1, h3) {
+/* div > *:not(h1, h3) {
   font-family: "Caslon Cp";
-}
+} */

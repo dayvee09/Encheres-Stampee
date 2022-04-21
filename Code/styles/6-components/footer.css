@@ -69,11 +69,6 @@
   border-color: var(--color-label);
 }
 
-.infolettre h2 {
-  font-weight: 700;
-  font-size: var(--size-xlarge);
-}
-
 footer p,
 footer a {
   font-size: clamp(10px, 1.5vw, 1rem);
@@ -152,4 +147,11 @@ footer a {
 
 .pied-page button:hover {
   background-color: var(--color-primary);
+}
+
+.infolettre__titre h1 {
+  color: var(--color-primary);
+  font-family: "Caslon Cp";
+  font-weight: 700;
+  font-size: var(--size-xlarge);
 }

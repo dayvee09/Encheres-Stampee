@@ -45,13 +45,23 @@
 
 .img--principale > *:first-child,
 .img--principale > *:last-child {
-  max-width: 100%;
-  min-width: 10%;
-  max-height: 25%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
 }
 
-.img--principale img:nth-child(2) {
+.img--principale > * {
+  overflow: hidden;
+}
+
+.img--principale :nth-child(2) img {
+  width: 100%;
   min-width: 50%;
+}
+
+.img--principale :not(:nth-child(2)) img {
+  width: 50%;
+  min-width: 25%;
 }
 
 .img--principale > img,
@@ -174,6 +184,10 @@ h4 {
   line-height: 1.25;
 }
 
+.mise--meta p {
+  font-size: var(--size-medium);
+}
+
 .fiche__description {
   display: flex;
   flex-direction: column;
@@ -183,8 +197,9 @@ h4 {
   margin-top: var(--space-small);
 }
 
-.fiche__description--paragraphe {
-  line-height: 1.25;
+.fiche__description--paragraphe p {
+  line-height: 1.5;
+  font-size: var(--size-medium);
 }
 
 .fiche__details {
@@ -196,8 +211,17 @@ h4 {
   margin-top: var(--space-small);
 }
 
-.fiche__details--liste > * {
+.fiche__details--liste > * > * {
+  display: flex;
+  justify-content: space-between;
   line-height: 1.5;
+}
+
+.fiche__details--liste h3,
+.fiche__details--liste span {
+  font-size: var(--size-medium);
+  font-family: "Caslon Cp";
+  font-weight: 500;
 }
 
 .vitrine--fiche {
@@ -228,8 +252,4 @@ main > h1 {
 
 .fiche__contact img {
   object-fit: contain;
-}
-
-.fiche__details--certifie > h2 {
-  font-size: var(--size-medium);
 }
